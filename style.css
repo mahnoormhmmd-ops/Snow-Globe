@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    align-items: center;
+    color: #162d4f;
+    font-family: "Libre Caslon Text", Georgia, serif;
+    background: linear-gradient(#367cb1, #ffffff)
+
+}
+h1 {
+    color:aquamarine;
+    text-shadow: 0 5px 20px rgba(0, 0, 0, 0.7);
+    font-size: 4rem;
+}
+.tagline {
+    color: #033e36;
+    font-weight: 3rem;
+}
+
+.mano {
+    padding: 3rem 1rem 1rem;
+    text-align: center;
+
+}
+
+main {
+    max-width: 32rem;
+    margin: 0 auto;
+    padding: 0 1rem 4rem;
+}
+
+.globe-card {
+    border: 5px solid aquamarine;
+    background: linear-gradient(#074d40, aquamarine);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.globe {
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    background: radial-gradient(circle at 30%, #ffffff, #80a4ca 65%, #3d74af);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.globe img {
+    width: 79%;
+}
+
+button {
+    font: inherit;
+    color: #fdfefe;
+    background:#068d7b;
+    border: #033e36;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+    border-radius: 30px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.7);
+}
+
+button:hover {
+    background: #033e36;
+    transform: translateY(-3px);
+}
+
+
+#message {
+    font-style: italic;
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0) rotate(0deg); }
+    20% { transform: translateX(-0.6rem) rotate(-4deg); }
+    40% { transform: translateX(0.6rem) rotate(4deg); }
+    60% { transform: translateX(-0.4rem) rotate(-2deg); }
+    80% {transform: translateX(0.4rem) rotate(2deg); }
+}
+
+.globe.shaking {
+    animation: shake 0.6s ease;
+}
